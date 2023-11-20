@@ -17,11 +17,19 @@ questionContainer.addEventListener("click", () => {
 });
 //-------------------------------------------
 btn1.addEventListener("click", () => {
-  response.style.visibility = "visible";
+  response.classList.add("show-response");
   response.style.background = "green";
 });
 
 btn2.addEventListener("click", () => {
-    response.style.visibility = "visible";
-    response.style.background = "red";
+  response.classList.add("show-response");
+  response.style.background = "red";
+});
+
+//Mouve event
+const mousemove = document.querySelector(".mousemove");
+//console.log(mousemove);
+
+Window.addEventListener("mousemove", (e) => {
+  console.log(e);
 });
