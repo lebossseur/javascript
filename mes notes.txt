@@ -1,0 +1,35 @@
+Cloud
+- On-demand self-service
+- Boroad network access
+- Resource pooling 
+- Rapid elasticity
+- Measured service 
+
+Modèles de services
+. Software as a service (SAAS)
+. Plateforme as a service (PAAS)
+. Insfrastructure as a service (IAAS)
+
+Modèles de deploiement
+. Private Cloud 
+. Community Cloud
+. Public Cloud
+. Hybrid Cloud
+
+Cas d'usages (Cloud)
+
+. Environnement de développemnt
+. Démonstration de faisabilité (POC)
+. Hébergémént des sites web
+. Plan continuité de service
+. Plan de reprise d'activité
+. Sauvegardes archivage
+. Big Data Datawarehouse
+. Augmentation du trafic
+. IA Machine Learning
+. Migration
+
+Comment utiliser aws
+-console
+-ligne de commande CLI
+-Software Dev Kit (SDK)
