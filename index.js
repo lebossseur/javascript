@@ -24,6 +24,17 @@ btn1.addEventListener("click", () => {
 btn2.addEventListener("click", () => {
   response.classList.add("show-response");
   response.style.background = "red";
+<<<<<<< HEAD
+=======
+});
+
+//Mouve event
+const mousemove = document.querySelector(".mousemove");
+//console.log(mousemove);
+
+Window.addEventListener("mousemove", (e) => {
+  console.log(e);
+>>>>>>> 14daf86a8660353a9c8922585569e07d9991f49b
 });
 
 //Mouve event

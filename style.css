@@ -49,6 +49,7 @@ p{
     width: 50px;
     border: 2px solid pink;
     position: absolute;
+<<<<<<< HEAD
     transform: translate(-50%,-50%);
     border-radius: 50px;
     transition: 0.2s ease;
@@ -56,3 +57,7 @@ p{
 
 
 }
+=======
+    border-radius: 50px;
+}
+>>>>>>> 14daf86a8660353a9c8922585569e07d9991f49b
