@@ -17,11 +17,47 @@ questionContainer.addEventListener("click", () => {
 });
 //-------------------------------------------
 btn1.addEventListener("click", () => {
-  response.style.visibility = "visible";
+  response.classList.add("show-response");
   response.style.background = "green";
 });
 
 btn2.addEventListener("click", () => {
-    response.style.visibility = "visible";
-    response.style.background = "red";
+  response.classList.add("show-response");
+  response.style.background = "red";
 });
+
+//Mouve event
+const mousemove = document.querySelector(".mousemove");
+//console.log(mousemove);
+
+window.addEventListener("mousemove", (e) => {
+  mousemove.style.left = e.pageX + "px";
+  mousemove.style.top = e.pageY + "px";
+});
+
+window.addEventListener("mousedown", (e) => {
+  mousemove.style.transform = "scale(2) translate(-25%,-25%)";
+});
+
+window.addEventListener("mouseup", (e) => {
+  mousemove.style.transform = "scale(1) translate(-50%,-50%)";
+  mousemove.style.border = "2px solid teal";
+});
+
+questionContainer.addEventListener("mouseenter", () => {
+  questionContainer.style.background = "rgba(0,0,0,0.6)";
+});
+
+questionContainer.addEventListener("mouseout", () => {
+  console.log("mouseout !");
+  questionContainer.style.background = "pink";
+});
+
+response.addEventListener("mouseover", () => {
+  response.style.transform = "rotate(2deg)";
+});
+
+/*************************************************** */
+
+const keypressContainer = document.querySelector(".keypress");
+console.log(keypressContainer);
