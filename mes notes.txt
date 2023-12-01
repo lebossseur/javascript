@@ -52,7 +52,7 @@ Service intégré
 - AWS elastic Beanstalk
 - Amazon simple notificatiion service (SNS
 - Amazon Cloudwatch
-- AMAzon Cloudwatch
+- Amazon CloudFormation
 
 
 
