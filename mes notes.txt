@@ -1,6 +1,18 @@
 Cloud
 - On-demand self-service
-- Boroad network access
+- B
+
+
+
+
+
+
+
+
+
+
+
+road network access
 - Resource pooling 
 - Rapid elasticity
 - Measured service 
@@ -33,3 +45,32 @@ Comment utiliser aws
 -console
 -ligne de commande CLI
 -Software Dev Kit (SDK)
+
+
+Servives de base
+- AWS identity and Access Management (IAM)
+- Amazon virtual priate cloud (VPC)
+- Amazon elastic compute cloud (EC2)
+- Amazon elastic Block Store (EBS)
+- Amazon simple storage service (S3)
+
+Service intégré
+
+- Elastic load balancer (ELB)
+- Auto Scaling
+- Amazon Route53
+- Amazon relational database services (RDS)
+- AWS lambda
+- AWS elastic Beanstalk
+- Amazon simple notificatiion service (SNS
+- Amazon Cloudwatch
+- AMAzon Cloudwatch
+
+
+
+
+
+
+
+
+
