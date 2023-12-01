@@ -1,18 +1,6 @@
 Cloud
 - On-demand self-service
-- B
-
-
-
-
-
-
-
-
-
-
-
-road network access
+- Broad network access
 - Resource pooling 
 - Rapid elasticity
 - Measured service 
