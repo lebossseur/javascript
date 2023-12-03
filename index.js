@@ -24,22 +24,15 @@ btn1.addEventListener("click", () => {
 btn2.addEventListener("click", () => {
   response.classList.add("show-response");
   response.style.background = "red";
-<<<<<<< HEAD
-=======
 });
 
 //Mouve event
 const mousemove = document.querySelector(".mousemove");
 //console.log(mousemove);
 
-Window.addEventListener("mousemove", (e) => {
-  console.log(e);
->>>>>>> 14daf86a8660353a9c8922585569e07d9991f49b
+window.addEventListener("mousemove", (e) => {
+  // console.log(e);
 });
-
-//Mouve event
-const mousemove = document.querySelector(".mousemove");
-//console.log(mousemove);
 
 window.addEventListener("mousemove", (e) => {
   mousemove.style.left = e.pageX + "px";
@@ -68,7 +61,82 @@ response.addEventListener("mouseover", () => {
   response.style.transform = "rotate(2deg)";
 });
 
-/*************************************************** */
+/*************************keypress************************** */
 
 const keypressContainer = document.querySelector(".keypress");
-console.log(keypressContainer);
+const key = document.getElementById("key");
+
+const ring = (key) => {
+  const audio = new Audio();
+  // audio.src="z.mp3";
+  audio.src = key + ".mp3";
+  audio.play();
+};
+
+document.addEventListener("keypress", (e) => {
+  key.textContent = e.key;
+
+  if (e.key === "j") {
+    keypressContainer.style.background = "red";
+  } else if (e.key === "h") {
+    keypressContainer.style.background = "teal";
+  } else {
+    keypressContainer.style.background = "gray";
+  }
+  if (e.key === "z") {
+    ring(e.key);
+  }
+});
+
+/*************************Scroll event************************** */
+
+const nav = document.querySelector("nav");
+//console.log(nav);
+
+window.addEventListener("scroll", (e) => {
+  console.log(window.scrollY);
+
+  if (window.scrollY > 120) {
+    nav.style.top = 0;
+  } else {
+    nav.style.top = "-50px";
+  }
+});
+
+/*************************forms events************************** */
+
+const inputName = document.querySelector('input[type="text"]');
+const select = document.querySelector("select");
+const form = document.querySelector("form");
+//console.log(form);
+let pseudo = "";
+let language = "";
+
+inputName.addEventListener("input", (e) => {
+  pseudo = e.target.value;
+});
+
+select.addEventListener("input", (e) => {
+  console.log(e.target.value);
+});
+
+form.addEventListener("submit", (e) => {
+  e.preventDefault();
+  // console.log("yes !");
+
+
+  if (cgv.checked) {
+    //affiche le contenu des variables
+    document.querySelector(" form > div").innerHTML = '
+    <h3>pseudo : ${pseudo}</h3>
+    <h4>Langage préféré : ${language}</h4>
+    ';
+
+  } else {
+    alert("Veuillez accepter les CGV !");
+  }
+
+});
+
+
+
