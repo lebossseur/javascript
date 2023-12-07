@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="./style.css" />
   </head>
   <body>
-    <div class="click-event box" id="box">
+    <div class="click-event box" id="box" class="box">
       <h4>Quelle est la capitale de la Suisse</h4>
       <button id="btn1">Berne</button>
       <button id="btn2">Zurich</button>
@@ -30,20 +30,18 @@
     </nav>
 
     <form action="" class="box">
- <input type="text" placeholder="Entrer votre nom">
- <select name="" id="">
-<option value="">Sélectionner votre langage</option>
-<option value="Javascript">"Javascript"</option>
-<option value="PHP">"PHP"</option>
-<option value="Python">"Python"</option>
+      <input type="text" placeholder="Entrer votre nom" />
+      <select name="" id="">
+        <option value="">Sélectionner votre langage</option>
+        <option value="Javascript">"Javascript"</option>
+        <option value="PHP">"PHP"</option>
+        <option value="Python">"Python"</option>
+      </select>
+      <input type="checkbox" name="cgv" id="cgv" />
+      <label for="cgv">Acceptez les CGV</label>
+      <input type="submit" value="Valider" />
 
- </select>
- <input type="checkbox" name="cgv" id="">
- <label for="cgv">Acceptez les CGV</label>
-<input type="submit" value="Valider">
-
-<div></div>
-
+      <div></div>
     </form>
     <script src="./index.js"></script>
   </body>

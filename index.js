@@ -21,10 +21,10 @@ btn1.addEventListener("click", () => {
   response.style.background = "green";
 });
 
-btn2.addEventListener("click", () => {
-  response.classList.add("show-response");
-  response.style.background = "red";
-});
+// btn2.addEventListener("click", () => {
+//   response.classList.add("show-response");
+//   response.style.background = "red";
+// });
 
 //Mouve event
 const mousemove = document.querySelector(".mousemove");
@@ -133,4 +133,86 @@ form.addEventListener("submit", (e) => {
   } else {
     alert("Veuillez accepter les CGV !");
   }
+});
+
+//load event
+
+window.addEventListener("load", () => {
+  console.log("Document chargé !");
+});
+
+//forEach
+const boxes = document.querySelectorAll(".box");
+
+console.log(boxes);
+
+boxes.forEach((box) => {
+  box.addEventListener("click", (e) => {
+    e.target.style.transform = "scale(0.7)";
+  });
+});
+
+//addEventListener Vs onclick
+
+document.body.onclick = () => {
+  console.log("Click !");
+};
+// avec addEventListener on peut lui adosser plusieurs fonctions
+
+document.body.addEventListener(
+  "click",
+  () => {
+    console.log("click 1 !");
+  },
+  false
+);
+//usecapture
+document.body.addEventListener(
+  "click",
+  () => {
+    console.log("click 2 !");
+  },
+  true
+);
+
+//stopPropagation
+
+questionContainer.addEventListener("click", (e) => {
+  alert("Test !");
+  e.stopPropagation;
+});
+
+//removeEventListener
+
+// le BOM Browser Object Model
+
+//console.log(window.innerHeight);
+
+//window.open("http://google.com", " cours js", "height=600, width=800");
+
+//window.close();
+
+//evts adossés à,window
+
+//window.alert("alert");
+//confirm
+
+btn2.addEventListener("click", () => {
+  confirm("Voulez vous vraiment tromper ?");
+});
+
+//promt
+let answer;
+btn1.addEventListener("click", () => {
+  let answer = prompt("entrer votre nom");
+  questionContainer.innerHTML = "<h3>Bravo" + answer + "</h3>";
+
+  //timer compte à rebours
+  setTimeout(() => {
+    questionContainer.style.borderRadius = "300px";
+  }, 2000);
+
+  setInterval(() => {
+    document.body.innerHTML += "<div class="box"><h2>Nouvelle Boite</h2></div>";
+  }, 1000);
 });
