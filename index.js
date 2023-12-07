@@ -206,13 +206,46 @@ let answer;
 btn1.addEventListener("click", () => {
   let answer = prompt("entrer votre nom");
   questionContainer.innerHTML = "<h3>Bravo" + answer + "</h3>";
+});
 
-  //timer compte à rebours
-  setTimeout(() => {
-    questionContainer.style.borderRadius = "300px";
-  }, 2000);
+//timer compte à rebours
+setTimeout(() => {
+  questionContainer.style.borderRadius = "300px";
+}, 2000);
 
-  setInterval(() => {
-    document.body.innerHTML += "<div class="box"><h2>Nouvelle Boite</h2></div>";
-  }, 1000);
+// setInterval(() => {
+//   document.body.innerHTML +=
+//   "<div class='box'><h2>Nouvelle Boite</h2></div>";
+// }, 1000);
+
+document.body.addEventListener("click", (e) => {
+  e.target.remove();
+  clearInterval(interval);
+});
+
+//location
+
+// console.log(location.href);
+// console.log(location.host);
+// console.log(location.pathname);
+// console.log(location.search);
+
+//location.replace("http://lequipe.fr");
+// window.onload = () => {
+//   location.href = "http://lequipe.fr";
+// };
+
+//navigator
+
+//console.log(navigator.userAgent);
+
+//console.log(window.history);
+//window.history.back();
+
+/////////////***********setProperty************** */
+
+window.addEventListener("mousemove", (e) => {
+  nav.style.setProperty("--x", e.layerX + "px");
+  nav.style.setProperty("--y", e.layerY + "px");
+
 });
