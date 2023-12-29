@@ -6,15 +6,11 @@
 
 // Connaitre niveau de scroll (window.scrollY)
 
-let lastScroll=0;
-window.addEventListener('scroll',()=>{
-if(window.scrollY<lastScroll){
-    navbar.style.top=0;
-}
-else{
-    navbar.style.top="-60px";
-}
+let lastScroll = 0;
+window.addEventListener("scroll", () => {
+  if (window.scrollY > lastScroll) {
+    navbar.style.height = "50px";
+  }
 
-    lastScroll=window.scrollY;
-   
-})
+  lastScroll = window.scrollY;
+});
