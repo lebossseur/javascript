@@ -95,6 +95,8 @@ p::first-letter {
   width: 60%;
   padding: 2rem;
   opacity: 0;
+  transform: translateX(-200px);
+  transition: 1s ease-in;
 }
 .overcome {
   padding: 2rem;
